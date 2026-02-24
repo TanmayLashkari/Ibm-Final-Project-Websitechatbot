@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roadmap Generator — Chart Your Learning Path</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">🗺️</div>
+      <span>Roadmap</span>Generator
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="roadmap.html">Roadmaps</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme">☀️</button>
+      <button class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <a href="index.html" class="active">🏠 Home</a>
+    <a href="roadmap.html">🗺️ Roadmaps</a>
+    <a href="about.html">ℹ️ About</a>
+    <a href="contact.html">✉️ Contact</a>
+    <a href="faq.html">❓ FAQ</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob"></div>
+      <div class="hero-blob"></div>
+      <div class="hero-blob"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Free & Open Source · No Account Needed
+      </div>
+      <h1>
+        Generate Your
+        <span class="highlight">Learning Roadmap</span>
+      </h1>
+      <p>Get a structured, step-by-step learning path tailored to your chosen career. From beginner to professional — we map the journey.</p>
+
+      <form class="hero-form" id="hero-form">
+        <div class="select-wrapper">
+          <select class="hero-select" id="career-select">
+            <option value="">Select your career path…</option>
+            <option value="web-dev">🌐 Web Development</option>
+            <option value="data-science">📊 Data Science</option>
+            <option value="machine-learning">🤖 Machine Learning</option>
+            <option value="cybersecurity">🔐 Cybersecurity</option>
+            <option value="mobile-dev">📱 Mobile App Development</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Generate Roadmap →
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stats-grid container">
+      <div class="stat-item">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Career Paths</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">35+</div>
+        <div class="stat-label">Roadmap Steps</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">200+</div>
+        <div class="stat-label">Topics Covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Free Forever</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Why Use Roadmap Generator</div>
+        <h2>Everything you need to<br>navigate your learning journey</h2>
+        <p>Structured paths, progress tracking, and downloadable guides — all in one place.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-icon">🎯</div>
+          <h3>Structured Paths</h3>
+          <p>Every roadmap is carefully structured from beginner to advanced — no guessing what to learn next.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">✅</div>
+          <h3>Progress Tracking</h3>
+          <p>Check off completed steps and watch your progress bar grow. Your data is saved automatically.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">⬇️</div>
+          <h3>Downloadable Guides</h3>
+          <p>Export your entire roadmap as a formatted text file to study offline at your own pace.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">⏱️</div>
+          <h3>Time Estimates</h3>
+          <p>Each step includes realistic time estimates so you can plan your learning schedule effectively.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">🔍</div>
+          <h3>Step Search</h3>
+          <p>Quickly find specific topics or skills within your roadmap using the built-in search filter.</p>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon">🌙</div>
+          <h3>Dark & Light Mode</h3>
+          <p>Study comfortably day or night with our fully supported dark and light theme options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATHS PREVIEW -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Available Roadmaps</div>
+        <h2>Pick your path and<br>start building today</h2>
+      </div>
+
+      <div class="grid-2">
+        <a href="roadmap.html?career=web-dev" style="display:block">
+          <div class="card reveal" style="cursor:pointer">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🌐</div>
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, React, Node.js, and databases. Build for the web from scratch to deployment.</p>
+            <div style="margin-top:1.25rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+              <span class="badge badge-duration">7 Steps</span>
+              <span class="badge badge-level">Beginner → Advanced</span>
+            </div>
+          </div>
+        </a>
+        <a href="roadmap.html?career=data-science" style="display:block">
+          <div class="card reveal" style="cursor:pointer">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">📊</div>
+            <h3>Data Science</h3>
+            <p>Python, statistics, Pandas, ML models, and big data. Turn raw data into powerful insights.</p>
+            <div style="margin-top:1.25rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+              <span class="badge badge-duration">7 Steps</span>
+              <span class="badge badge-level">Beginner → Advanced</span>
+            </div>
+          </div>
+        </a>
+        <a href="roadmap.html?career=machine-learning" style="display:block">
+          <div class="card reveal" style="cursor:pointer">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🤖</div>
+            <h3>Machine Learning</h3>
+            <p>Neural networks, deep learning, NLP, computer vision, and MLOps. Build intelligent systems.</p>
+            <div style="margin-top:1.25rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+              <span class="badge badge-duration">7 Steps</span>
+              <span class="badge badge-level">Intermediate → Advanced</span>
+            </div>
+          </div>
+        </a>
+        <a href="roadmap.html?career=cybersecurity" style="display:block">
+          <div class="card reveal" style="cursor:pointer">
+            <div style="font-size:2.5rem;margin-bottom:1rem;">🔐</div>
+            <h3>Cybersecurity</h3>
+            <p>Networking, ethical hacking, web security, forensics, and cloud security. Protect the digital world.</p>
+            <div style="margin-top:1.25rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+              <span class="badge badge-duration">7 Steps</span>
+              <span class="badge badge-level">Beginner → Advanced</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.1rem">
+          <div class="logo-icon">🗺️</div>
+          <span>Roadmap</span>Generator
+        </div>
+        <p>Your free guide to structured tech learning. Chart your path, track your progress, achieve your goals.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roadmap.html">Roadmaps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Roadmaps</h4>
+        <ul>
+          <li><a href="roadmap.html?career=web-dev">Web Development</a></li>
+          <li><a href="roadmap.html?career=data-science">Data Science</a></li>
+          <li><a href="roadmap.html?career=machine-learning">Machine Learning</a></li>
+          <li><a href="roadmap.html?career=cybersecurity">Cybersecurity</a></li>
+          <li><a href="roadmap.html?career=mobile-dev">Mobile Dev</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Roadmap Generator. Built with ❤️ using HTML, CSS & JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+  <!-- Watson Assistant Chat -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "6b8936a1-8582-4b87-83d7-07c305870dae",
+      region: "au-syd",
+      serviceInstanceID: "b8e806a7-3db3-4eb7-8526-0b4dfb004dbf",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
